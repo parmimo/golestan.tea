@@ -1,0 +1,834 @@
+* {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+@font-face {
+  font-family: golestan;
+  src: url(/fonts/OpenSans-SemiBold.eot);
+  src: url(/fonts/OpenSans-SemiBold.ttf);
+  src: url(/fonts/OpenSans-SemiBold.woff2);
+}
+@font-face {
+  font-family: main;
+  src: url(/fonts/IRANSansWeb-Light.woff);
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid rgb(211, 205, 205);
+  box-shadow: 1px 1px 10px 0px rgb(224, 222, 222);
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #2b2b2b;
+  display: grid;
+  grid-template-columns: 30% 75%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 10;
+}
+header .logo {
+  width: 100%;
+  height: inherit;
+  text-align: left;
+}
+header .logo img {
+  width: 33%;
+  justify-content: right;
+  margin: 50px;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  margin-top: 35px;
+  font-family: golestan;
+  font-size: 17px;
+}
+header nav ul li {
+  height: 100%;
+  list-style: none;
+  line-height: 10px;
+  margin: 20px;
+  position: relative;
+  font-family: golestan;
+}
+header nav ul li:hover div {
+  opacity: 1;
+}
+header nav ul li div {
+  width: 150px;
+  background-color: #414040;
+  position: absolute;
+  top: 200%;
+  text-align: right;
+  opacity: 0;
+  transition: 300ms;
+  padding-right: 20px;
+}
+header nav ul li div a {
+  display: block;
+  text-decoration: none;
+  line-height: 35px;
+  font-size: 14px;
+  font-family: golestan;
+}
+header nav ul li .default {
+  color: whitesmoke;
+  font-family: golestan;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgba(211, 211, 211, 0.788);
+  transition: 300ms;
+  font-family: golestan;
+}
+header nav ul li a:hover {
+  color: whitesmoke;
+}
+
+hr {
+  margin: 30px 10px;
+  color: #c7c7c7;
+}
+
+.main {
+  width: 100%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #DFDFDF;
+  margin-top: 6%;
+}
+.main .right {
+  width: 100%;
+  padding: 50px;
+  margin-right: 250px;
+}
+.main .right h1 {
+  color: rgb(245, 11, 11);
+  margin-bottom: 10px;
+  font-size: 35px;
+  margin-top: 40px;
+  font-weight: lighter;
+  font-family: golestan;
+}
+.main .right h2 {
+  color: rgb(113, 111, 111);
+  font-size: 25px;
+  font-family: golestan;
+  font-style: normal;
+  font-weight: lighter;
+}
+.main .right p {
+  width: 50%;
+  color: #898989;
+  margin-top: 30px;
+  line-height: 33px;
+  font-family: golestan;
+  font-size: 17px;
+  font-weight: 100;
+}
+.main .right .more {
+  width: 130px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid rgb(174, 172, 172);
+  margin-top: 25px;
+  transition: 300ms;
+}
+.main .right .more:hover {
+  background-color: #FF0000;
+}
+.main .right .more a {
+  text-decoration: none;
+  color: rgb(152, 151, 151);
+  transition: 100ms;
+  font-family: golestan;
+  font-size: 17px;
+  font-weight: lighter;
+}
+.main .right .more a:hover {
+  color: rgb(233, 226, 226);
+}
+.main .left {
+  width: 100%;
+  text-align: left;
+}
+.main .left img {
+  margin-left: 35%;
+  margin-top: 45px;
+}
+
+.introductionmain {
+  height: 900px;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
+  padding: 55px;
+}
+.introductionmain .introduction {
+  width: 45%;
+  margin: 10px auto;
+}
+.introductionmain .introduction h1 {
+  color: #FF0000;
+  font-size: 22px;
+  font-family: main;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.introductionmain .introduction .one {
+  line-height: 35px;
+  font-family: main;
+  font-size: 15px;
+  font-weight: 300;
+  color: #898989;
+}
+.introductionmain .introduction .hilight {
+  color: #FF0000;
+  font-family: main;
+  font-size: 15px;
+}
+.introductionmain .introduction .two {
+  line-height: 35px;
+  font-family: main;
+  font-size: 15px;
+  font-weight: 300;
+  color: #898989;
+  margin-top: 23px;
+}
+.introductionmain .introduction .dif {
+  margin-top: 30px;
+  line-height: 35px;
+  font-family: main;
+  font-size: 15px;
+  font-weight: 300;
+  color: #898989;
+}
+.introductionmain .introduction .btn1 {
+  width: 130px;
+  height: 30px;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid rgb(174, 172, 172);
+  margin-top: 25px;
+  transition: 300ms;
+}
+.introductionmain .introduction .btn1:hover {
+  background-color: #FF0000;
+}
+.introductionmain .introduction .btn1 a {
+  text-decoration: none;
+  color: rgb(152, 151, 151);
+  transition: 100ms;
+  font-family: main;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.introductionmain .introduction .btn1 a:hover {
+  color: rgb(233, 226, 226);
+}
+.introductionmain .products {
+  width: 45%;
+  margin: 10px auto;
+}
+.introductionmain .products h1 {
+  color: #FF0000;
+  font-family: main;
+  font-weight: 600;
+  font-size: 22px;
+}
+.introductionmain .products p {
+  line-height: 35px;
+  font-family: main;
+  font-size: 15px;
+  font-weight: 300;
+  color: #898989;
+  margin-top: 23px;
+}
+.introductionmain .products p .hilight {
+  color: #FF0000;
+  font-family: main;
+  font-size: 15px;
+}
+.introductionmain .detail {
+  width: 50%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 15px;
+  margin: 5px auto;
+  padding-top: 80px;
+}
+.introductionmain .detail .detailobject {
+  width: 100%;
+  height: 50%;
+}
+.introductionmain .detail .detailobject .img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.introductionmain .detail .detailobject .img img {
+  width: 100%;
+}
+.introductionmain .detail .detailobject .title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(163, 162, 162, 0.801);
+  padding-bottom: 15px;
+}
+.introductionmain .detail .detailobject .title span {
+  color: #948f8f;
+  font-family: main;
+  font-size: 17px;
+}
+
+.imagemain {
+  width: 100%;
+  height: 512px;
+  position: relative;
+  background-color: #E9D69F;
+}
+.imagemain img {
+  width: 100%;
+  height: 490px;
+}
+.imagemain .textimage {
+  width: 285px;
+  height: 85px;
+  background-color: #ED1C24;
+  position: absolute;
+  padding: 8px;
+  bottom: 0.15%;
+  right: 23.5%;
+}
+.imagemain .textimage h1 {
+  color: #FDFFFF;
+  margin-bottom: 15px;
+  font-family: golestan;
+  font-size: 30px;
+  padding-right: 25px;
+}
+.imagemain .textimage span {
+  color: #FDFFFF;
+  font-family: golestan;
+  font-size: 18.5px;
+  padding-right: 25px;
+  margin-bottom: 3px;
+}
+
+.foodmain {
+  width: 100%;
+  height: 420px;
+}
+.foodmain .firstfood {
+  width: 40%;
+  height: inherit;
+  padding: 30px;
+  margin: 0 auto;
+}
+.foodmain .firstfood h1 {
+  color: #FF0000;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-family: main;
+}
+.foodmain .firstfood p {
+  font-size: 16px;
+  color: #898989;
+  line-height: 35px;
+  font-family: main;
+  font-size: 15px;
+}
+.foodmain .firstfood .btn1 {
+  width: 130px;
+  height: 8%;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid rgb(174, 172, 172);
+  margin-top: 25px;
+  transition: 300ms;
+  display: inline-block;
+  font-family: main;
+  font-size: 15px;
+}
+.foodmain .firstfood .btn1:hover {
+  background-color: #FF0000;
+}
+.foodmain .firstfood .btn1 a {
+  text-decoration: none;
+  color: rgb(152, 151, 151);
+  transition: 100ms;
+  font-family: main;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.foodmain .firstfood .btn1 a:hover {
+  color: rgb(233, 226, 226);
+}
+.foodmain .firstfood .btn2 {
+  display: inline-block;
+  margin-right: 14px;
+  width: 130px;
+  height: 8%;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid rgb(174, 172, 172);
+  transition: 300ms;
+  font-family: main;
+  font-size: 15px;
+}
+.foodmain .firstfood .btn2:hover {
+  background-color: #FF0000;
+}
+.foodmain .firstfood .btn2 a {
+  text-decoration: none;
+  color: rgb(152, 151, 151);
+  transition: 100ms;
+  font-weight: lighter;
+  font-family: main;
+  font-size: 15px;
+}
+.foodmain .firstfood .btn2 a:hover {
+  color: rgb(233, 226, 226);
+}
+
+.fixback {
+  width: 100%;
+  height: 256px;
+  background-image: url(/public/main/recipe-baner-1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Journal {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(252, 252, 252);
+}
+.Journal div {
+  width: inherit;
+  height: inherit;
+  padding-top: 30px;
+}
+.Journal div h1 {
+  color: rgb(245, 8, 8);
+  margin-right: 20%;
+  font-size: 21px;
+  margin-top: 5px;
+  font-family: main;
+}
+
+.journalObject {
+  width: 100%;
+  height: 770px;
+  background-color: #CDE4B0;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 20px;
+  justify-content: center;
+}
+.journalObject .object {
+  height: 600px;
+  margin: auto 0;
+  background-color: white;
+  box-shadow: 1px 2px 2px 2px lightgray;
+}
+.journalObject .object .image {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+.journalObject .object .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.journalObject .object .image:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s ease;
+}
+.journalObject .object .detail {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+}
+.journalObject .object .detail h1 {
+  font-size: 19px;
+  margin-bottom: 15px;
+  color: red;
+  font-family: main;
+}
+.journalObject .object .detail p {
+  width: 90%;
+  font-size: 14px;
+  color: #777777;
+  line-height: 35px;
+  font-family: main;
+}
+.journalObject .object .detail .button {
+  width: 33%;
+  height: 12%;
+  background-color: rgb(254, 254, 254);
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 5px;
+  border: 1px solid rgb(231, 228, 228);
+  transition: 300ms;
+  margin-top: 40px;
+  font-family: main;
+  font-size: 15px;
+}
+.journalObject .object .detail .button:hover {
+  background-color: rgb(243, 9, 9);
+}
+.journalObject .object .detail .button a {
+  text-decoration: none;
+  color: rgba(99, 97, 97, 0.788);
+  transition: 300ms;
+}
+.journalObject .object .detail .button a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.movies {
+  width: 100%;
+  height: 565px;
+  background-color: #FDFFFF;
+  display: grid;
+  grid-template-columns: repeat(3, 316px);
+  gap: 20px;
+  justify-content: center;
+}
+.movies .movieobject {
+  height: 445px;
+  margin: auto 0;
+  background-color: #FFFFFF;
+  box-shadow: 1px 2px 2px 2px lightgray;
+  border: 1px solid lightgray;
+}
+.movies .movieobject .movie {
+  width: 100%;
+  height: 40%;
+}
+.movies .movieobject .movie video {
+  width: 100%;
+  height: 100%;
+}
+.movies .movieobject .detail {
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+}
+.movies .movieobject .detail h1 {
+  font-size: 19px;
+  margin-bottom: 15px;
+  color: rgb(248, 10, 10);
+  font-family: main;
+}
+.movies .movieobject .detail p {
+  width: 90%;
+  font-size: 14px;
+  color: #818080;
+  line-height: 30px;
+  font-family: main;
+}
+.movies .movieobject .detail .button {
+  width: 40%;
+  height: 12%;
+  background-color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding-top: 5px;
+  border: 1px solid rgb(177, 176, 176);
+  transition: 300ms;
+  margin-top: 18px;
+  font-family: main;
+  font-size: 15px;
+}
+.movies .movieobject .detail .button:hover {
+  background-color: rgb(248, 10, 10);
+}
+.movies .movieobject .detail .button a {
+  text-decoration: none;
+  color: rgba(99, 97, 97, 0.788);
+  transition: 300ms;
+}
+.movies .movieobject .detail .button a:hover {
+  color: rgb(241, 233, 233);
+}
+
+.responsibility {
+  width: 100%;
+  height: 620px;
+  background-color: #126366;
+  text-align: center;
+  position: relative;
+}
+.responsibility div {
+  width: 100%;
+  margin-top: 8%;
+  position: absolute;
+}
+.responsibility div h3 {
+  color: rgb(209, 208, 208);
+  font-size: 17px;
+  color: #AFECE1;
+  margin-top: 100px;
+  font-family: main;
+}
+.responsibility div hr {
+  color: red;
+  border: 0.03px solid #009DA2;
+}
+.responsibility div h1 {
+  margin-top: 5px;
+  color: #09dfe7;
+  font-size: 20px;
+  font-family: main;
+}
+.responsibility div h5 {
+  color: rgb(209, 208, 208);
+  margin-top: 10px;
+  font-family: main;
+  font-size: medium;
+  font-weight: lighter;
+}
+.responsibility div .bold {
+  font-family: main;
+  font-weight: bold;
+  color: #0fb4b9;
+  font-size: 25px;
+}
+.responsibility .hospital {
+  width: 400px;
+  height: 345px;
+  position: absolute;
+  bottom: -120px;
+  right: 37%;
+}
+
+.ressocial {
+  width: 100%;
+  height: 520px;
+  background-color: rgb(255, 255, 255);
+}
+.ressocial .text {
+  width: 40%;
+  height: inherit;
+  margin: 0 auto;
+  padding: 30px;
+  padding-top: 10%;
+}
+.ressocial .text h1 {
+  color: #FF0000;
+  font-size: 23px;
+  margin-bottom: 30px;
+  font-family: main;
+}
+.ressocial .text p {
+  font-size: 16px;
+  color: #7d7d7d;
+  line-height: 33px;
+  font-family: main;
+  font-size: 15px;
+}
+.ressocial .text .hilight {
+  color: #FF0000;
+  font-family: main;
+  font-size: 15px;
+}
+.ressocial .text .btn1 {
+  width: 20%;
+  height: 6%;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 5px;
+  border: 1px solid rgb(216, 209, 209);
+  display: inline-block;
+  transition: 300ms;
+  margin-top: 25px;
+  font-family: main;
+  font-size: 15px;
+}
+.ressocial .text .btn1:hover {
+  background-color: rgb(252, 9, 9);
+}
+.ressocial .text .btn1 a {
+  text-decoration: none;
+  color: rgba(99, 97, 97, 0.788);
+  transition: 300ms;
+}
+.ressocial .text .btn1 a:hover {
+  color: whitesmoke;
+}
+
+.social {
+  width: 100%;
+  height: 95px;
+  background-color: #ebf5f5;
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.social div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+.social div i {
+  font-size: 24px;
+  color: #999;
+  transition: color 300ms, transform 300ms;
+}
+.social div:hover i {
+  transform: scale(1.1);
+}
+.social div.facebook:hover i {
+  color: #1877F2;
+}
+.social div.linkedin:hover i {
+  color: #0A66C2;
+}
+.social div.instagram:hover i {
+  color: #E4405F;
+}
+.social div.telegram:hover i {
+  color: #0088cc;
+}
+.social div.aparat:hover i {
+  color: #F48024;
+}
+.social div.golestan:hover i {
+  color: #00C4B4;
+}
+
+footer {
+  width: 100%;
+  height: 540px;
+}
+footer .red {
+  width: 100%;
+  height: 5%;
+  background-color: rgb(243, 9, 9);
+}
+footer .middle {
+  width: 100%;
+  height: 70%;
+  background-color: #272525;
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  gap: 20px;
+  justify-content: center;
+}
+footer .middle div {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .middle div .footerimg {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .middle div .footerimg img {
+  width: 65%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .middle div hr {
+  width: 50%;
+  border: 0.01px solid rgba(163, 158, 158, 0.425);
+  margin-bottom: 10px;
+}
+footer .middle div .hr {
+  margin-bottom: 15px;
+}
+footer .middle div h1 {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  font-family: golestan;
+}
+footer .middle div a {
+  text-decoration: none;
+  color: #a39f9f;
+  font-size: 13px;
+  display: block;
+  line-height: 28px;
+  transition: 300ms;
+  font-family: main;
+}
+footer .middle div a:hover {
+  color: rgb(240, 234, 234);
+}
+footer .bottom {
+  width: 100%;
+  height: 25%;
+  background-color: #2b2b2b;
+}
+footer .bottom .copy {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+footer .bottom .copy h1 {
+  color: rgba(175, 172, 172, 0.6980392157);
+  font-size: 16px;
+  font-family: main;
+  margin-bottom: 10px;
+}
+footer .bottom .copy h3 {
+  color: rgba(141, 139, 139, 0.4784313725);
+  font-size: 13px;
+  font-family: main;
+}/*# sourceMappingURL=main.css.map */
